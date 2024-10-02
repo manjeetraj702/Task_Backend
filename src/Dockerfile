@@ -11,4 +11,4 @@ COPY target/your-app-name.jar /app/your-app-name.jar
 EXPOSE 8080
 
 # Step 5: Command to run the application
-ENTRYPOINT ["java", "-jar", "/app/your-app-name.jar"]
+ENTRYPOINT ["java", "-jar", "/app/taskmanger.jar"]
