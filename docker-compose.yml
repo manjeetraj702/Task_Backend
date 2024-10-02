@@ -1,0 +1,16 @@
+version: '3'
+services:
+  spring-app:
+    image: my-spring-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb+srv://manjeet:123%40gmail.com@mydatabase.ij74b.mongodb.net/taskmanagerDB?retryWrites=true&w=majority&ssl=true&appName=taskmanager
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"

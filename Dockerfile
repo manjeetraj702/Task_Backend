@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Step 3: Copy the built JAR file from your local machine into the container
-COPY target/your-app-name.jar /app/your-app-name.jar
+COPY target/taskmanger.jar /app/taskmanger.jar
 
 # Step 4: Expose the port on which your app runs (8080 for Spring Boot)
 EXPOSE 8080
